@@ -45,6 +45,12 @@
   grid-template-columns: 1fr;
 }
 
+.socials-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 8px;
+}
+
 @media (min-width: 768px) {
   .posts {
     gap: 24px;
@@ -75,6 +81,10 @@
 @media (min-width: 1440px) {
   .overlay {
     padding: 24px 48px;
+  }
+  
+  .social-list {
+    gap: 24px;
   }
 }
 
@@ -132,6 +142,10 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .socials-item:nth-child(1) .social-link {
